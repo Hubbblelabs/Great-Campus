@@ -1,0 +1,41 @@
+import Link from "next/link";
+import { content } from "@/lib/content";
+
+export default function Footer() {
+  return (
+    <footer className="bg-white border-t border-gray-100 py-12">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex items-center gap-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded bg-gray-900 text-white font-bold">
+              G
+            </div>
+            <span className="text-xl font-semibold tracking-tight text-gray-900">
+              Great Campus
+            </span>
+          </div>
+
+          <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+            {content.footer.links.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        <div className="mt-8 border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+          <p>{content.footer.copyright}</p>
+          <div className="flex gap-4 text-sm">
+            <Link href="#terms" className="hover:text-gray-900">Terms of Service</Link>
+            <Link href="#privacy" className="hover:text-gray-900">Privacy Policy</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
