@@ -4,7 +4,7 @@ export default function Testimonials() {
   const { testimonials } = content;
 
   return (
-    <section id="testimonials" className="bg-white py-16 sm:py-24">
+    <section id="success-stories" className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 md:text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl">

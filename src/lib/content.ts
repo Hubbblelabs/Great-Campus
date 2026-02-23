@@ -1,99 +1,129 @@
 export const content = {
-  seo: {
-    title: "Great Campus | Elevate Your Campus Experience",
-    description: "A streamlined platform designed to improve campus life, simplify operations, and support student success."
-  },
-  hero: {
-    heading: "Smarter campus operations, simplified.",
-    subheading: "Connect students, faculty, and administration in one unified platform. No clutter, just what you need to run your campus effectively.",
-    ctaPrimary: "Start Free Trial",
-    ctaSecondary: "See How It Works"
-  },
-  features: [
-    {
-      icon: "Users",
-      title: "Centralized Directory",
-      description: "Find and connect with anyone on campus instantly. Secure, updated, and always available."
+    seo: {
+        title: 'AI Career Readiness for MBA, BBA, Engineering | Great Campus',
+        description:
+            'Great Campus empowers Indian students with AI-driven tools to identify strengths, improve interview skills, and secure better placements.',
     },
-    {
-      "icon": "Calendar",
-      "title": "Event Management",
-      "description": "Schedule, promote, and manage campus events with zero friction. Keep attendance and send automated reminders."
+    hero: {
+        heading: 'Careers don’t fail. Direction does.',
+        subheading:
+            'GreatCampus helps MBA, BBA, and engineering students find their strengths and ace interviews with AI guidance.',
+        ctaPrimary: 'Get Started',
+        ctaSecondary: 'Free Trial',
     },
-    {
-      "icon": "ShieldCheck",
-      "title": "Access Control",
-      "description": "Manage permissions, approve visitors, and ensure a secure campus environment from a single dashboard."
-    }
-  ],
-  services: [
-    {
-      title: "Administrative Support",
-      description: "Offload paperwork and manual data entry. Our platform handles student records, fee collection, and daily reporting."
-    },
-    {
-      "title": "Career & Placement",
-      "description": "Bridge the gap between education and employment. Track student progress, organize placement drives, and connect with recruiters."
-    },
-    {
-      "title": "Academic Planning",
-      "description": "Structure curriculums, manage timelines, and distribute resources effectively without relying on messy spreadsheets."
-    }
-  ],
-  howItWorks: [
-    {
-      step: "1",
-      title: "Onboard Your Institution",
-      description: "Upload your existing data securely. Our team helps you map out your specific campus structure and requirements."
-    },
-    {
-      step: "2",
-      title: "Invite Users",
-      description: "Send automated onboarding emails to students and staff. Role-based access ensures everyone sees only what they need."
-    },
-    {
-      step: "3",
-      title: "Operate Smoothly",
-      description: "Manage day-to-day activities, collect feedback, and access real-time analytics from your customized dashboard."
-    }
-  ],
-  testimonials: [
-    {
-      quote: "We transitioned our entire placement process to this platform. It saved us hundreds of hours and improved student engagement.",
-      author: "Dr. Ananya Sharma",
-      role: "Placement Director, Tech Institute"
-    },
-    {
-      quote: "Finally, a campus tool that doesn't feel like it was built in 2005. It's clean, fast, and does exactly what we need.",
-      author: "Rahul Desai",
-      role: "Dean of Students"
-    }
-  ],
-  about: {
-    heading: "Built for modern Indian education.",
-    description: "We understand the unique challenges faced by growing institutions. Our goal is to remove administrative bottlenecks so educators can focus on what actually matters—teaching and mentoring."
-  },
-  faq: [
-    {
-      question: "How long does setup take?",
-      answer: "Most institutions get up and running within two weeks, including data migration and initial staff training."
-    },
-    {
-      question: "Is the data secure?",
-      answer: "Yes. We use industry-standard encryption and host all data on secure, localized servers complying with data protection guidelines."
-    },
-    {
-      question: "Can we integrate this with our existing ERP?",
-      answer: "We offer REST APIs and custom integration services for popular ERP systems used by universities."
-    }
-  ],
-  footer: {
-    links: [
-      { label: "Features", href: "#features" },
-      { label: "Pricing", href: "#pricing" },
-      { label: "Support", href: "#support" },
-      { label: "Privacy", href: "#privacy" }
+    features: [
+        {
+            icon: 'Users',
+            title: 'Career Fit (CBMF)',
+            description:
+                'Behavioral and aptitude assessments that match you with roles you’re naturally suited for.',
+        },
+        {
+            icon: 'Calendar',
+            title: 'Mock Interviews',
+            description:
+                'AI-driven interview practice that highlights your strengths and pinpoints areas to improve.',
+        },
+        {
+            icon: 'ShieldCheck',
+            title: 'Micro Learning',
+            description: 'Short lessons fix interview gaps efficiently.',
+        },
     ],
-    copyright: "© 2026 Great Campus. All rights reserved."
-  }
+    services: [
+        {
+            title: 'Career Clarity',
+            description: 'Students discover their true strengths and ideal roles.',
+        },
+        {
+            title: 'Mock Interviews',
+            description: 'Targeted feedback boosts confidence and communication.',
+        },
+        {
+            title: 'Success Stories',
+            description: 'Real students share their journey to placement.',
+        },
+    ],
+    howItWorks: [
+        {
+            step: '1',
+            title: 'Discover Your Strengths',
+            description:
+                "Take behavioral and aptitude assessments to identify roles you're naturally suited for.",
+        },
+        {
+            step: '2',
+            title: 'Practice with AI',
+            description:
+                'Engage in AI-driven mock interviews that highlight your strengths and areas for improvement.',
+        },
+        {
+            step: '3',
+            title: 'Improve Efficiently',
+            description:
+                'Use targeted micro-learning modules to fix interview gaps quickly and secure your placement.',
+        },
+    ],
+    testimonials: [
+        {
+            quote: 'GreatCampus helped me identify my strengths and boosted my interview confidence like never before.',
+            author: 'Riya Singh',
+            role: 'Student, Mumbai',
+        },
+        {
+            quote: 'The AI mock interviews pinpointed exactly where I was lacking, and the micro-learning modules made preparation focused and effective.',
+            author: 'Arjun Patel',
+            role: 'Student, Bengaluru',
+        },
+    ],
+    about: {
+        heading: 'Built on belief',
+        description:
+            'At GreatCampus, we believe career success begins with self-awareness and focused preparation tailored for MBA, BBA, and engineering students.',
+    },
+    faq: [
+        {
+            question: 'Who is GreatCampus for?',
+            answer: 'GreatCampus is designed specifically for MBA, BBA, and engineering students seeking career clarity and interview preparation.',
+        },
+        {
+            question: 'How do the AI mock interviews work?',
+            answer: 'Our AI platform simulates real interview scenarios, analyzes your performance, and provides targeted feedback on your strengths and areas to improve.',
+        },
+        {
+            question: 'Are the services customized to my career goals?',
+            answer: 'Yes, our tools and micro-learning modules are tailored to align with your specific skills and the roles you aspire to secure.',
+        },
+        {
+            question: 'How does AI help?',
+            answer: 'AI pinpoints your interview gaps and suggests focused learning.',
+        },
+        {
+            question: 'Are AI mock interviews realistic?',
+            answer: 'Yes, our AI simulates real interview scenarios with detailed feedback on communication and confidence.',
+        },
+        {
+            question: 'Can colleges track progress?',
+            answer: 'Absolutely, institutions get AI dashboards to monitor student readiness.',
+        },
+        {
+            question: 'Is this suitable for beginners?',
+            answer: 'Yes, our step-by-step framework guides students from self-discovery to preparation.',
+        },
+        {
+            question: 'How quickly can I see results?',
+            answer: 'Many students notice improved confidence and clarity within weeks of using our targeted micro-learning modules.',
+        }
+    ],
+    footer: {
+        links: [
+            { label: 'Home', href: '/' },
+            { label: 'Services', href: '#services' },
+            { label: 'Projects', href: '#projects' },
+            { label: 'Success Stories', href: '#success-stories' },
+            { label: 'FAQs', href: '#faqs' },
+            { label: 'Contact', href: '#contact' },
+        ],
+        copyright: `© ${new Date().getFullYear()}. All rights reserved.`,
+    }
 };
