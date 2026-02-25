@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2">
           {/* Logo placeholder */}
-          <div className="flex h-8 w-8 items-center justify-center rounded bg-gray-900 text-white font-bold">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-brand text-white font-bold shadow-sm">
             G
           </div>
           <Link href="/" className="text-xl font-semibold tracking-tight text-gray-900">
@@ -35,8 +35,8 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4">
           <Link 
-            href="#contact"
-            className="rounded-lg bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            href="https://dcas.teammistake.com" target="_blank"
+            className="rounded-lg bg-gradient-brand px-4 py-2 text-sm font-medium text-white shadow-sm transition-all hover:opacity-90 hover:shadow-md"
           >
             {content.hero.ctaPrimary}
           </Link>
@@ -68,8 +68,8 @@ export default function Navbar() {
             ))}
             <div className="mt-4 pt-4 border-t border-gray-100">
               <Link 
-                href="#contact"
-                className="block w-full text-center mt-2 rounded-lg bg-gray-900 px-4 py-3 text-base font-medium text-white transition-opacity hover:opacity-90"
+                href="https://dcas.teammistake.com" target="_blank"
+                className="block w-full text-center mt-2 rounded-lg bg-gradient-brand px-4 py-3 text-base font-medium text-white shadow-sm transition-all hover:opacity-90 hover:shadow-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {content.hero.ctaPrimary}

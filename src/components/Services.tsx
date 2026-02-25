@@ -4,7 +4,7 @@ export default function Services() {
   const { services, about } = content;
 
   return (
-    <section id="services" className="bg-white py-16 sm:py-24">
+    <section id="services" className="bg-white py-8 sm:py-12">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-start lg:gap-16">
           <div className="lg:w-1/3 mb-12 lg:mb-0 lg:sticky lg:top-24">
@@ -16,7 +16,7 @@ export default function Services() {
             </p>
             <div className="mt-8 rounded-xl overflow-hidden border border-gray-100 shadow-sm hidden lg:block">
               <img 
-                src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80" 
+                src="/photo-1571677246347-5040036b95cc.avif" 
                 alt="Student studying with AI" 
                 className="w-full h-auto object-cover aspect-square"
               />

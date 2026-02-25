@@ -9,7 +9,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faqs" className="bg-gray-50 py-16 sm:py-24">
+    <section id="faqs" className="bg-gray-50 py-8 sm:py-12">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl">
@@ -34,7 +34,7 @@ export default function FAQ() {
                   <span className="text-lg font-medium text-gray-900">
                     {item.question}
                   </span>
-                  <span className={`ml-6 flex shrink-0 items-center justify-center h-8 w-8 rounded-full bg-gray-50 text-gray-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
+                  <span className={`ml-6 flex shrink-0 items-center justify-center h-8 w-8 rounded-full bg-gray-50  text-gray-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
                     <ChevronDown className="h-5 w-5" />
                   </span>
                 </button>

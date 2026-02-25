@@ -4,25 +4,25 @@ import { Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100 py-12">
+    <footer className="bg-gray-950 border-t border-gray-900 py-12">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded bg-gray-900 text-white font-bold">
+              <div className="flex h-8 w-8 items-center justify-center rounded bg-gradient-brand text-white font-bold">
                 G
               </div>
-              <span className="text-xl font-semibold tracking-tight text-gray-900">
+              <span className="text-xl font-semibold tracking-tight text-white">
                 Great Campus
               </span>
             </div>
             
-            <div className="flex flex-col items-center md:items-start gap-2 text-sm text-gray-600 mt-2">
-              <a href="mailto:contact@greatcampus.in" className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+            <div className="flex flex-col items-center md:items-start gap-2 text-sm text-gray-400 mt-2">
+              <a href="mailto:contact@greatcampus.in" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="h-4 w-4" />
                 contact@greatcampus.in
               </a>
-              <a href="tel:+919217666272" className="flex items-center gap-2 hover:text-gray-900 transition-colors">
+              <a href="tel:+919217666272" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="h-4 w-4" />
                 +91 92176 66272
               </a>
@@ -34,7 +34,7 @@ export default function Footer() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-sm text-gray-400 hover:text-white transition-colors"
               >
                 {link.label}
               </Link>
@@ -42,11 +42,11 @@ export default function Footer() {
           </nav>
         </div>
 
-        <div className="mt-8 border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+        <div className="mt-8 border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
           <p>{content.footer.copyright}</p>
           <div className="flex gap-4 text-sm">
-            <Link href="#terms" className="hover:text-gray-900">Terms of Service</Link>
-            <Link href="#privacy" className="hover:text-gray-900">Privacy Policy</Link>
+            <Link href="#terms" className="hover:text-white">Terms of Service</Link>
+            <Link href="#privacy" className="hover:text-white">Privacy Policy</Link>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ export default function Testimonials() {
   const { testimonials } = content;
 
   return (
-    <section id="success-stories" className="bg-white py-16 sm:py-24">
+    <section id="success-stories" className="bg-primary-50/30 py-8 sm:py-12">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 md:text-center">
           <h2 className="text-3xl font-semibold tracking-tight text-gray-900 md:text-4xl">
@@ -21,7 +21,7 @@ export default function Testimonials() {
               key={index}
               className="rounded-2xl border border-gray-100 bg-gray-50 p-8 shadow-sm"
             >
-              <div className="flex text-gray-400 mb-6">
+              <div className="flex text-primary-500 mb-6">
                 {/* 5-star rating SVG */}
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="h-5 w-5 fill-current" viewBox="0 0 20 20">

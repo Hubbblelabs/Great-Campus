@@ -8,7 +8,7 @@ export const content = {
         heading: 'Careers don’t fail. Direction does.',
         subheading:
             'GreatCampus helps MBA, BBA, and engineering students find their strengths and ace interviews with AI guidance.',
-        ctaPrimary: 'Get Started',
+        ctaPrimary: 'Take Assessment',
         ctaSecondary: 'Free Trial',
     },
     features: [
@@ -118,8 +118,7 @@ export const content = {
     footer: {
         links: [
             { label: 'Home', href: '/' },
-            { label: 'Services', href: '#services' },
-            { label: 'Projects', href: '#projects' },
+            { label: 'Services', href: '#features' },
             { label: 'Success Stories', href: '#success-stories' },
             { label: 'FAQs', href: '#faqs' },
             { label: 'Contact', href: '#contact' },
