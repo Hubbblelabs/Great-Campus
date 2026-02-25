@@ -18,11 +18,11 @@ export default function Footer() {
             </div>
             
             <div className="flex flex-col items-center md:items-start gap-2 text-sm text-gray-400 mt-2">
-              <a href="mailto:contact@greatcampus.in" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@greatcampus.in" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="h-4 w-4" />
                 contact@greatcampus.in
               </a>
-              <a href="tel:+919217666272" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="https://wa.me/919217666272" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="h-4 w-4" />
                 +91 92176 66272
               </a>
