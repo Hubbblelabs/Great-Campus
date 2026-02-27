@@ -5,36 +5,36 @@ export default function Hero() {
     const { hero } = siteContent;
 
     return (
-        <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
-            <div className="max-w-6xl mx-auto">
+        <section className="bg-white px-4 pt-32 pb-20 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl">
                 {/* Badge */}
-                <div className="flex justify-center md:justify-start mb-8">
-                    <span className="inline-flex items-center gap-2 text-sm text-blue-700 bg-blue-50 border border-blue-100 px-3 py-1.5 rounded-full font-medium">
-                        <span className="w-1.5 h-1.5 rounded-full bg-blue-500 inline-block"></span>
+                <div className="mb-8 flex justify-center md:justify-start">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
+                        <span className="inline-block h-1.5 w-1.5 rounded-full bg-blue-500"></span>
                         {hero.badge}
                     </span>
                 </div>
 
                 {/* Headline */}
                 <div className="max-w-3xl">
-                    <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight tracking-tight mb-6 text-center md:text-left whitespace-pre-line">
+                    <h1 className="mb-6 text-center text-4xl leading-tight font-semibold tracking-tight whitespace-pre-line text-gray-900 md:text-left md:text-5xl">
                         {hero.headline}
                     </h1>
-                    <p className="text-lg text-gray-500 leading-relaxed mb-10 text-center md:text-left max-w-2xl">
+                    <p className="mb-10 max-w-2xl text-center text-lg leading-relaxed text-gray-500 md:text-left">
                         {hero.subheadline}
                     </p>
 
                     {/* CTAs */}
-                    <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                    <div className="flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
                         <Link
                             href={hero.primaryCta.href}
-                            className="inline-flex items-center justify-center bg-blue-600 text-white text-sm font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                            className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-700"
                         >
                             {hero.primaryCta.label}
                         </Link>
                         <Link
                             href={hero.secondaryCta.href}
-                            className="inline-flex items-center justify-center text-gray-700 text-sm font-medium px-6 py-3 rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors"
+                            className="inline-flex items-center justify-center rounded-lg border border-gray-200 px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
                         >
                             {hero.secondaryCta.label}
                         </Link>
@@ -42,11 +42,11 @@ export default function Hero() {
                 </div>
 
                 {/* Stats bar */}
-                <div className="mt-16 pt-8 border-t border-gray-100">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="mt-16 border-t border-gray-100 pt-8">
+                    <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
                         {hero.stats.map((stat) => (
                             <div key={stat.label} className="text-center md:text-left">
-                                <div className="text-3xl font-semibold text-gray-900 mb-1">
+                                <div className="mb-1 text-3xl font-semibold text-gray-900">
                                     {stat.value}
                                 </div>
                                 <div className="text-sm text-gray-500">{stat.label}</div>

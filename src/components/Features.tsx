@@ -22,14 +22,14 @@ export default function Features() {
     const { features } = siteContent;
 
     return (
-        <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-            <div className="max-w-6xl mx-auto">
+        <section id="features" className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl">
                 {/* Header */}
-                <div className="max-w-xl mb-14">
-                    <p className="text-sm text-blue-600 font-medium mb-3 uppercase tracking-wide">
+                <div className="mb-14 max-w-xl">
+                    <p className="mb-3 text-sm font-medium tracking-wide text-blue-600 uppercase">
                         What we do
                     </p>
-                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+                    <h2 className="mb-4 text-2xl font-semibold text-gray-900 md:text-3xl">
                         Everything placement prep needs, in one program.
                     </h2>
                     <p className="text-base text-gray-500">
@@ -39,21 +39,21 @@ export default function Features() {
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                     {features.map((feature) => {
                         const Icon = iconMap[feature.icon];
                         return (
                             <div
                                 key={feature.title}
-                                className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                                className="rounded-lg border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
                             >
-                                <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-4">
+                                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50">
                                     {Icon && <Icon size={20} className="text-blue-600" />}
                                 </div>
-                                <h3 className="text-base font-semibold text-gray-900 mb-2">
+                                <h3 className="mb-2 text-base font-semibold text-gray-900">
                                     {feature.title}
                                 </h3>
-                                <p className="text-sm text-gray-500 leading-relaxed">
+                                <p className="text-sm leading-relaxed text-gray-500">
                                     {feature.description}
                                 </p>
                             </div>

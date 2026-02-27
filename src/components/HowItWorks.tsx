@@ -4,14 +4,14 @@ export default function HowItWorks() {
     const { howItWorks } = siteContent;
 
     return (
-        <section id="how-it-works" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-            <div className="max-w-6xl mx-auto">
+        <section id="how-it-works" className="bg-gray-50 px-4 py-20 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl">
                 {/* Header */}
-                <div className="max-w-xl mb-14">
-                    <p className="text-sm text-blue-600 font-medium mb-3 uppercase tracking-wide">
+                <div className="mb-14 max-w-xl">
+                    <p className="mb-3 text-sm font-medium tracking-wide text-blue-600 uppercase">
                         How it works
                     </p>
-                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+                    <h2 className="mb-4 text-2xl font-semibold text-gray-900 md:text-3xl">
                         From onboarding to offers — here&apos;s the process.
                     </h2>
                     <p className="text-base text-gray-500">
@@ -23,25 +23,25 @@ export default function HowItWorks() {
                 {/* Steps */}
                 <div className="relative">
                     {/* Vertical connector line on desktop */}
-                    <div className="hidden lg:block absolute left-9.75 top-8 bottom-8 w-px bg-gray-200" />
+                    <div className="absolute top-8 bottom-8 left-9.75 hidden w-px bg-gray-200 lg:block" />
 
                     <div className="flex flex-col gap-8">
                         {howItWorks.map((item) => (
-                            <div key={item.step} className="flex gap-6 items-start">
+                            <div key={item.step} className="flex items-start gap-6">
                                 {/* Step number */}
-                                <div className="shrink-0 w-20 h-20 rounded-xl bg-white border border-gray-200 shadow-sm flex flex-col items-center justify-center">
-                                    <span className="text-xs text-gray-400 font-medium">Step</span>
+                                <div className="flex h-20 w-20 shrink-0 flex-col items-center justify-center rounded-xl border border-gray-200 bg-white shadow-sm">
+                                    <span className="text-xs font-medium text-gray-400">Step</span>
                                     <span className="text-xl font-bold text-blue-600">
                                         {item.step}
                                     </span>
                                 </div>
 
                                 {/* Content */}
-                                <div className="pt-3 flex-1">
-                                    <h3 className="text-base font-semibold text-gray-900 mb-2">
+                                <div className="flex-1 pt-3">
+                                    <h3 className="mb-2 text-base font-semibold text-gray-900">
                                         {item.title}
                                     </h3>
-                                    <p className="text-sm text-gray-500 leading-relaxed max-w-2xl">
+                                    <p className="max-w-2xl text-sm leading-relaxed text-gray-500">
                                         {item.description}
                                     </p>
                                 </div>

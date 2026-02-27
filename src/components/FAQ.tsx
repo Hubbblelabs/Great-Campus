@@ -11,18 +11,18 @@ export default function FAQ() {
     const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
     return (
-        <section id="faq" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-            <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+        <section id="faq" className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl">
+                <div className="grid grid-cols-1 gap-16 lg:grid-cols-3">
                     {/* Left: header */}
                     <div className="lg:sticky lg:top-24 lg:self-start">
-                        <p className="text-sm text-blue-600 font-medium mb-3 uppercase tracking-wide">
+                        <p className="mb-3 text-sm font-medium tracking-wide text-blue-600 uppercase">
                             FAQ
                         </p>
-                        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+                        <h2 className="mb-4 text-2xl font-semibold text-gray-900 md:text-3xl">
                             Common questions answered.
                         </h2>
-                        <p className="text-base text-gray-500 leading-relaxed">
+                        <p className="text-base leading-relaxed text-gray-500">
                             If you have something specific in mind, reach out to our team directly.
                         </p>
                     </div>
@@ -33,14 +33,14 @@ export default function FAQ() {
                             {faq.map((item, i) => (
                                 <div key={item.question} className="py-5">
                                     <button
-                                        className="flex items-start justify-between w-full text-left gap-4 group"
+                                        className="group flex w-full items-start justify-between gap-4 text-left"
                                         onClick={() => toggle(i)}
                                         aria-expanded={openIndex === i}
                                     >
-                                        <span className="text-sm font-medium text-gray-900 group-hover:text-blue-600 transition-colors leading-relaxed">
+                                        <span className="text-sm leading-relaxed font-medium text-gray-900 transition-colors group-hover:text-blue-600">
                                             {item.question}
                                         </span>
-                                        <span className="shrink-0 mt-0.5 text-gray-400">
+                                        <span className="mt-0.5 shrink-0 text-gray-400">
                                             {openIndex === i ? (
                                                 <Minus size={16} />
                                             ) : (
@@ -49,7 +49,7 @@ export default function FAQ() {
                                         </span>
                                     </button>
                                     {openIndex === i && (
-                                        <p className="mt-3 text-sm text-gray-500 leading-relaxed pr-8">
+                                        <p className="mt-3 pr-8 text-sm leading-relaxed text-gray-500">
                                             {item.answer}
                                         </p>
                                     )}

@@ -7,14 +7,14 @@ export default function Services() {
     const { services } = siteContent;
 
     return (
-        <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-            <div className="max-w-6xl mx-auto">
+        <section id="services" className="bg-white px-4 py-20 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-6xl">
                 {/* Header */}
-                <div className="max-w-xl mb-14">
-                    <p className="text-sm text-blue-600 font-medium mb-3 uppercase tracking-wide">
+                <div className="mb-14 max-w-xl">
+                    <p className="mb-3 text-sm font-medium tracking-wide text-blue-600 uppercase">
                         Our services
                     </p>
-                    <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+                    <h2 className="mb-4 text-2xl font-semibold text-gray-900 md:text-3xl">
                         Three ways we work with you.
                     </h2>
                     <p className="text-base text-gray-500">
@@ -24,20 +24,20 @@ export default function Services() {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                     {services.map((service) => (
                         <div
                             key={service.title}
                             className={clsx(
-                                'rounded-lg p-6 border flex flex-col',
+                                'flex flex-col rounded-lg border p-6',
                                 service.highlight
-                                    ? 'bg-blue-600 border-blue-600 text-white'
-                                    : 'bg-white border-gray-200 shadow-sm',
+                                    ? 'border-blue-600 bg-blue-600 text-white'
+                                    : 'border-gray-200 bg-white shadow-sm',
                             )}
                         >
                             <h3
                                 className={clsx(
-                                    'text-lg font-semibold mb-3',
+                                    'mb-3 text-lg font-semibold',
                                     service.highlight ? 'text-white' : 'text-gray-900',
                                 )}
                             >
@@ -45,13 +45,13 @@ export default function Services() {
                             </h3>
                             <p
                                 className={clsx(
-                                    'text-sm leading-relaxed mb-6',
+                                    'mb-6 text-sm leading-relaxed',
                                     service.highlight ? 'text-blue-100' : 'text-gray-500',
                                 )}
                             >
                                 {service.description}
                             </p>
-                            <ul className="flex flex-col gap-2.5 mb-8 flex-1">
+                            <ul className="mb-8 flex flex-1 flex-col gap-2.5">
                                 {service.points.map((point) => (
                                     <li key={point} className="flex items-start gap-2.5">
                                         <span
@@ -80,7 +80,7 @@ export default function Services() {
                             <Link
                                 href="#contact"
                                 className={clsx(
-                                    'text-sm font-medium px-4 py-2.5 rounded-lg text-center transition-colors mt-auto',
+                                    'mt-auto rounded-lg px-4 py-2.5 text-center text-sm font-medium transition-colors',
                                     service.highlight
                                         ? 'bg-white text-blue-600 hover:bg-blue-50'
                                         : 'bg-blue-600 text-white hover:bg-blue-700',

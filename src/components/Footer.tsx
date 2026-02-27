@@ -8,19 +8,19 @@ export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white">
             {/* Main footer */}
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
+            <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+                <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
                     {/* Brand */}
                     <div className="lg:col-span-2">
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                                <span className="text-white font-bold text-sm">GC</span>
+                        <div className="mb-4 flex items-center gap-2">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600">
+                                <span className="text-sm font-bold text-white">GC</span>
                             </div>
-                            <span className="font-semibold text-white text-lg tracking-tight">
+                            <span className="text-lg font-semibold tracking-tight text-white">
                                 Great Campus
                             </span>
                         </div>
-                        <p className="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
+                        <p className="mb-6 max-w-xs text-sm leading-relaxed text-gray-400">
                             {footer.tagline}
                         </p>
 
@@ -28,14 +28,14 @@ export default function Footer() {
                         <div className="flex flex-col gap-3">
                             <a
                                 href={`mailto:${footer.contact.email}`}
-                                className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors"
+                                className="flex items-center gap-2.5 text-sm text-gray-400 transition-colors hover:text-white"
                             >
                                 <Mail size={14} className="text-gray-500" />
                                 {footer.contact.email}
                             </a>
                             <a
                                 href={`tel:${footer.contact.phone}`}
-                                className="flex items-center gap-2.5 text-sm text-gray-400 hover:text-white transition-colors"
+                                className="flex items-center gap-2.5 text-sm text-gray-400 transition-colors hover:text-white"
                             >
                                 <Phone size={14} className="text-gray-500" />
                                 {footer.contact.phone}
@@ -50,7 +50,7 @@ export default function Footer() {
                     {/* Links */}
                     {Object.entries(footer.links).map(([category, links]) => (
                         <div key={category}>
-                            <h4 className="text-xs font-semibold text-gray-300 uppercase tracking-widest mb-4">
+                            <h4 className="mb-4 text-xs font-semibold tracking-widest text-gray-300 uppercase">
                                 {category}
                             </h4>
                             <ul className="flex flex-col gap-2.5">
@@ -58,7 +58,7 @@ export default function Footer() {
                                     <li key={link.label}>
                                         <Link
                                             href={link.href}
-                                            className="text-sm text-gray-400 hover:text-white transition-colors"
+                                            className="text-sm text-gray-400 transition-colors hover:text-white"
                                         >
                                             {link.label}
                                         </Link>
@@ -72,14 +72,14 @@ export default function Footer() {
 
             {/* Bottom bar */}
             <div className="border-t border-gray-800">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+                <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-5 sm:flex-row sm:px-6 lg:px-8">
                     <p className="text-xs text-gray-500">{footer.copyright}</p>
                     <div className="flex items-center gap-5">
                         {footer.legal.map((item) => (
                             <Link
                                 key={item.label}
                                 href={item.href}
-                                className="text-xs text-gray-500 hover:text-gray-300 transition-colors"
+                                className="text-xs text-gray-500 transition-colors hover:text-gray-300"
                             >
                                 {item.label}
                             </Link>
