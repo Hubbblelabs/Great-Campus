@@ -113,7 +113,7 @@ export const content = {
         {
             question: 'How quickly can I see results?',
             answer: 'Many students notice improved confidence and clarity within weeks of using our targeted micro-learning modules.',
-        }
+        },
     ],
     footer: {
         links: [
@@ -124,5 +124,5 @@ export const content = {
             { label: 'Contact', href: '#contact' },
         ],
         copyright: `© ${new Date().getFullYear()}. All rights reserved.`,
-    }
+    },
 };
